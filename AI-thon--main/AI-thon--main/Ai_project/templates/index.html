@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roadrunner Speed Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to Roadrunner Speed Prediction</h1>
+    </header>
+    <div className="form_data">
+    <form action="/" method="post">
+        <label for="distance">Distance (in miles): </label>
+        <input type="number" id="distance" name="distance" required><br><br>
+
+        <label for="terrain">Terrain Type (1 for flat, 2 for rough): </label>
+        <input type="number" id="terrain" name="terrain" min="1" max="2" required><br><br>
+
+        <label for="weather">Weather Condition (1 for clear, 2 for rainy): </label>
+        <input type="number" id="weather" name="weather" min="1" max="2"required><br><br>
+
+        <button type="submit">Predict Roadrunner's Speed</button>
+    </form>
+    </div>
+
+    {% if predicted_speed %}
+        <h2>Predicted Roadrunner Speed: {{ predicted_speed }} mph</h2>
+    {% endif %}
+</body>
+</html>

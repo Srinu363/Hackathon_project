@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Predictions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='all_predictions.css') }}">
+</head>
+<body>
+    <h1>All Predictions</h1>
+    <ul>
+        <ul>
+            {% for prediction in predictions %}
+            <li class="box">
+            <ul class="input-values">
+               <center><h3>INPUT VALUES</h3></center><hr>
+                <li class="input-item">Distance: {{ prediction.inputs.distance }}</li>
+                <li class="input-item">Terrain: {{ prediction.inputs.terrain }}</li>
+                <li class="input-item">Weather: {{ prediction.inputs.weather }}</li>
+            </ul>
+            
+            <hr>
+                 <!-- Add the box class here -->
+                    <strong class="predicted-speed"><center>PREDICTED SPEED</center></strong><hr> {{ prediction.predicted_speed }}
+                    <hr>
+                    <strong class="accuracy-percentage"><center>ACCURACY</center></strong> <hr>{{ prediction.accuracy_percentage }}%<br><hr>
+                    
+                    
+                </li>
+                <br>
+            {% endfor %}
+        </ul>
+        
+    </ul>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roadrunner Speed Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='pradiction.css') }}">
+</head>
+<body>
+    <h1>Roadrunner Speed Prediction Result</h1>
+    <div class="outputs">
+        <div class="output1">
+            <p>
+                Predicted Speed: {{ prediction.predicted_speed }} meters per second.
+                This is the estimated speed of the roadrunner based on the given inputs.
+            </p>
+        </div>
+        <div class="output2">
+            <p>
+                Accuracy Percentage: {{ prediction.accuracy_percentage }}%.
+                This percentage indicates the accuracy of the prediction.
+                A higher accuracy percentage suggests a more reliable prediction.
+            </p>
+        </div>
+    </div>
+    <h2>Input Values</h2>
+    <ul>
+        <li>Distance: {{ prediction.inputs.distance }}</li>
+        <li>Terrain: {{ prediction.inputs.terrain }}</li>
+        <li>Weather: {{ prediction.inputs.weather }}</li>
+    </ul>
+
+    <!-- Button to redirect to all_predictions.html -->
+    <button onclick="window.location.href='/all_predictions'" type="button">View All Predictions</button>
+</body>
+</html>

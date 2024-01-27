@@ -1,0 +1,56 @@
+/* Styles for the outputs and input values */
+.output1, .output2 {
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Styles for the background image */
+body {
+    background-image: url('output.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Additional styles for the h1 and h2 headers */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+/* Styles for the button */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.output1 p, .output2 p {
+    font-size: 1.05em;
+}

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("C:Users/Jyothi Kumar/Downloads/backkk.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff717;
+    width: 30%;
+    height: 40%;
+    border-radius: 7px;
+}
+
+.predicted-speed {
+    font-weight: bold;
+    font-size: 120%;
+    color: orange;
+    font-family: "Arial";
+}
+
+.accuracy-percentage {
+    font-weight: bold;
+    font-size: 120%;
+    color: blue;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.input-values {
+    list-style-type: none;
+    padding: 0;
+    text-shadow: rgb(31, 40, 40);
+}
+
+.input-item {
+    margin-left: 24px;
+    font-family: 'Times New Roman';
+}
+
+h1 {
+    font-family: "Algerian";
+    color: rgb(12, 255, 64);
+    font-size: 40x;
+    text-align: center;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: deeppink;
+}
